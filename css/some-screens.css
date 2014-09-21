@@ -1,0 +1,166 @@
+/*
+  Styles for bigger screens, from small to big
+*/
+
+@media (min-width: 380px){
+
+  /*
+    - Display first pair of beers
+    - Display attribution link in footer of image of beer
+    - Bigger font in header and nav
+    - Hide menu-button
+    - Show nav by default
+  */
+
+  .beer-1 {
+    display: inline-block;
+  }
+
+  footer .attributions {
+    display: inline-block;
+  }
+
+  nav {
+    font: 16px/32px 'Shadows Into Light', cursive;
+    width: 100%;
+    float: none;
+  }
+
+  nav li {
+    display: inline-block;
+    width: 20%;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  header {
+    height: 108px;
+  }
+
+  header a {
+    font: 36px/72px 'Shadows Into Light', cursive;
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 450px) {
+  
+  /*
+    - Display the second pair of beers
+  */
+  
+  .beer-2 {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 570px) {
+
+  /*
+    - Display the third pair of beers
+    - Display the extra message in the footer
+  */
+  
+  .beer-3 {
+    display: inline-block;
+  }
+
+  footer .extra {
+    display: inline-block;
+  }
+  
+}
+
+@media (min-width: 700px) {
+  
+  /*
+    - Increased font size header and nav
+    - Display extra message in header
+    - Display articles in 2 columns
+  */
+  
+  #login {
+    margin-left: -125px;
+    margin-top: -75px;
+    width: 250px;
+    height: 150px;
+  }
+  
+  header {
+    /* Set height to 3x font size (line height + .5em border) */
+    height: 156px;
+  }
+
+  header a {
+    font-size: 52px;
+    line-height: 104px;
+  }
+
+  nav {
+    font-size: 28px;
+    line-height: 56px;
+  }
+
+  header .extra {
+    display: block;
+    font: 18px/28px "Arvo", serif;
+    color: #ede5d9;
+  }
+
+  .col-1, .col-2 {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .col-1 {
+    float: left;
+  }
+
+  .col-2 {
+    float: right;
+  }
+  
+}
+
+@media (min-width: 810px) {
+  
+  /*
+    - Display the fourth pair of beers
+  */
+  
+  .beer-4 {
+    display: inline-block;
+  }
+  
+}
+
+@media (min-width: 930px) {
+  
+  /*
+    - Display the fifth pair of beers
+  */
+  
+  .beer-5 {
+    display: inline-block;
+  }
+  
+}
+
+@media (min-width: 1050px) {
+  
+  /*
+    - Display the sixth pair of beers
+  */
+  
+  .beer-6 {
+    display: inline-block;
+  }
+  
+}

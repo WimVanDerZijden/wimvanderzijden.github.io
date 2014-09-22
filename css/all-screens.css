@@ -62,6 +62,13 @@ input {
   width:32px;
   height:32px;
   background: url("../media/beer.png") no-repeat;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.beer:hover {
+  transform: rotate(360deg);
 }
 
 .beer-1, .beer-2, .beer-3, .beer-4, .beer-5, .beer-6 {
@@ -80,7 +87,7 @@ header {
 header a {
   background-color: #FF9900;
   color: #048058;
-  font: 400 14px/28px "Arvo",sans-serif;
+  font: 400 14px/28px "Arvo", sans-serif;
   text-align: center;
   border: solid 0.5em #1F83FF;
   border-radius: 1em;

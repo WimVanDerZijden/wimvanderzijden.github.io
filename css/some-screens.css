@@ -16,6 +16,11 @@
     display: inline-block;
   }
 
+  h1 {
+    font-size: 19px;
+    line-height: 38px;
+  }
+  
   footer .attributions {
     display: inline-block;
   }
@@ -45,6 +50,29 @@
 
   header .title {
     font: 36px/72px 'Shadows Into Light', cursive;
+  }
+  
+  #contact label {
+    display: inline-block;
+    font: 14px/20px 'Arvo', serif;
+    color: #FF9900;
+    text-align: right;
+    width: 23%;
+    margin: 1%;
+  }
+  
+  #contact input, #contact textarea {
+    width: 73%;
+  }
+  
+  #contact textarea, #contact #submit {
+    float: right;
+  }
+  
+  #contact .extra,
+  #form-sent .extra,
+  .contact-info .extra {
+    display: block;
   }
 
 }
@@ -89,7 +117,6 @@
     margin-left: -125px;
     margin-top: -75px;
     width: 250px;
-    height: 150px;
   }
   
   header .title {
@@ -126,6 +153,24 @@
 
   .col-2 {
     float: right;
+  }
+  
+  #contact,
+  #form-sent {
+    width: 73%;
+    float:left;
+  }
+  
+  .contact-info {
+    width: 23%;
+    float: right;
+  }
+  
+  .contact-info img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10%;
   }
   
 }

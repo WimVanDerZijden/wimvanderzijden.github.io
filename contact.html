@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Zuipvakanties.nl | De enige reisorganisator die je gegarandeerd een kater bezorgt!</title>
+  <link rel="stylesheet" type="text/css" href="css/all-screens.css">
+  <link rel="stylesheet" type="text/css" href="css/some-screens.css" media="(min-width: 390px)">
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css' media="(min-width: 390px)">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="title">
+	      <div class="beer beer-6"></div>
+	      <div class="beer beer-5"></div>
+	      <div class="beer beer-4"></div>
+	      <div class="beer beer-3"></div>
+	      <div class="beer beer-2"></div>
+	      <div class="beer beer-1"></div>
+	      <span>Zuipvakanties.nl</span>
+	      <div class="beer beer-1"></div>
+	      <div class="beer beer-2"></div>
+	      <div class="beer beer-3"></div>
+	      <div class="beer beer-4"></div>
+	      <div class="beer beer-5"></div>
+	      <div class="beer beer-6"></div>
+        <span class="extra">De enige reisorganisator die je gegarandeerd een kater bezorgt!</span>
+	      </div><div id="menu-button"></div>
+      </header><nav>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li
+        ><li><a href="#">Aanbiedingen</a></li
+        ><li><a href="#">Registreren</a></li
+        ><li><a href="#" id="login-link">Inloggen</a></li
+        ><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article id="contact">
+        <h1>Stuur ons een vraag of opmerking!</h1>
+        <span class="extra">Vragen of opmerkingen over prijzen, annuleringen, overboekingen, ongelukken, klachten, alcoholvergiftiging, alcohol en drugsmisbruik van reisleiders en wat voor vragen en opmerkingen dan ook worden niet beantwoord.</span>
+        <form action="javascript:submitForm()">
+          <label for="name">Naam
+          </label><input type="text" placeholder="Je naam" name="name" id="name" required>
+          <label for="email">E-mail
+          </label><input type="email" placeholder="jouw@email.adres" name="email" id="email" required>
+          <label for="message">Bericht
+          </label><textarea rows="10" placeholder="Je vraag of opmerking" name="message" id="message" required></textarea>
+          <input type="submit" value="Verstuur" id="submit">
+        </form>
+      </article><article id="form-sent">
+        <h1>We hebben je vraag of opmerking ontvangen!</h1>
+        <span class="extra">Wegens het grote aantal vragen dat wij dagelijks binnenkregen (zo'n 2 per week) kunnen we niet overal op antwoorden. Maar reken er maar op dat we alles lezen! Mochten we tegen alle verwachtingen in toch reageren op deze vraag, dan vragen we je vriendelijk dit als een incident te beschouwen. Mocht je verder nog vragen of opmerkingen hebben, schroom dan niet om <a href="contact.html">nogmaals</a> van dit formulier gebruik te maken!</span>
+      </article><aside class="contact-info">
+        <h1>Contact Informatie</h1>
+        <ul>
+          <li>Heemradenlaan 588</li>
+          <li>7525 RS Apeldoorn</li>
+          <li>Kvk no.: 123456789</li>
+        </ul>
+        <img src="media/telephone.png" alt="Green telephone icon" title="aiga telephone bg green by dexternica via openclipart.org https://openclipart.org/detail/177837/aiga-telephone-bg-green-by-dexternica-177837">
+        <p class="extra">Disclaimer: zuipvakanties.nl onthoudt zich van alle aansprakelijkheid voor wat dan ook.</p>
+      </aside>
+    </main>
+  <div class="clear"></div>
+  <div id="dark"></div>
+  <div id="login">
+    <h1>Log in</h1>
+    <form action="index.html">
+      <input type="email" placeholder="E-mail" name="email" required>
+      <input type="password" placeholder="Wachtwoord" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" title="Password moet minimaal 8 tekens zijn en minstens 1 kleine letter, 1 hoofdletter en 1 cijfer bevatten." required>
+      <!-- Password regex modified from regex by Steven Smith via http://regexlib.com/REDetails.aspx?regexp_id=31 -->
+      <input type="submit" value="Login" class="submit">
+    </form>
+  </div>
+  <footer>
+    <span class="copyright">
+    &copy;2014 Van der Zijden Enterprises. 
+    </span>
+    <span class="extra"></span>
+    <span class="attributions">
+      Attribution: <a title="By http://www.fatcow.com/free-icons/ FatCow Web Hosting] (http://www.fatcow.com/free-icons/) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AFarm-Fresh_beer.png">Farm-Fresh beer</a>
+    </span>
+  </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

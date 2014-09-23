@@ -46,3 +46,9 @@ for (n = 0; n < articles.length; n += 1) {
     //images[i].style.transform = 'rotate(' + (-Math.PI / DULLNESS / 2) + 'rad)';
   }
 }
+
+/* Pretend we've just submitted the form with AJAX */
+var submitForm = function () {
+  document.getElementById("contact").style.display = 'none';
+  document.getElementById("form-sent").style.display = 'block';
+};

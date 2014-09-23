@@ -77,23 +77,17 @@ input {
 
 /* Header and navigation */
 
-header {
-  display: inline-block;
-  width: 100%;
-  height: 42px;
-  margin: 1%;
-}
-
-header a {
+header .title {
   background-color: #FF9900;
   color: #048058;
-  font: 400 14px/28px "Arvo", sans-serif;
-  text-align: center;
   border: solid 0.5em #1F83FF;
   border-radius: 1em;
   display: inline-block;
   width: 84%;
   height: 100%;
+  text-align: center;
+  font: 400 14px/28px "Arvo", sans-serif;
+  cursor: pointer;
 }
 
 header .extra {
@@ -109,7 +103,7 @@ header .extra {
   background: #56C1E8 url("../media/menu.png") 50% 50% no-repeat;
   border-radius: 1em;
   width: 14%;
-  height: 100%;
+  height: 42px; /* line-height + 2 * border of header .title */
   cursor: pointer;
 }
 

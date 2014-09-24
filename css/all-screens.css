@@ -5,6 +5,7 @@ Base style sheet for display in mobile devices
 Colors used
   #FF9900 #FF8125 #1F83FF #56C1E8 #C0F9FF
   #39BF5C #048058 #2DB870 #99FFA6 #A4E675
+  #EDE5D9
 
 */
 
@@ -182,6 +183,7 @@ nav a.active, nav a:hover {
 }
 
 #login .submit {
+  font-weigth 600;
   background-color: #FF9900;
 }
 
@@ -205,8 +207,8 @@ footer {
 
 article img {
   display: block;
-  width: 100%;
-  padding-bottom: 3%;
+  width: 94%;
+  margin: 3%;
   height: auto;
   border-radius: 20px;
 }
@@ -215,6 +217,7 @@ article img {
 #contact input,
 #contact textarea 
 {
+  font-family: 'Arvo', serif;
   width: 98%;
   margin: 1%;
 }
@@ -235,9 +238,16 @@ article img {
   margin: 2%;
 }
 
+#contact #submit {
+  background-color: #1F83FF;
+  color: #EDE5D9;
+}
+
 .contact-info li {
   font: 14px/20px 'Arvo', serif;
 }
+
+
 
 /* Footer */
 

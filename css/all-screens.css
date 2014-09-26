@@ -148,6 +148,8 @@ nav ul {
 
 nav li {
   text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 nav a {

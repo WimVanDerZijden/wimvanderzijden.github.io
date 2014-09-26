@@ -8,53 +8,91 @@
   <link rel="stylesheet" type="text/css" href="css/some-screens.css" media="(min-width: 390px)">
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css' media="(min-width: 390px)">
+  <!--
+    NOTICE on MARK-UP
+
+    In some places the mark-up is distorted on purpose.
+
+    Instead of:
+
+    <div>
+      ... 
+    </div>
+    <div>
+
+    We sometimes have something like:
+
+    <div>...
+    </div><div> .. 
+
+    The reason for this is that "inline elements respect the whitespace in the markup".
+    This is something we will often want to avoid. For instance, if we have 4 inline elements
+    that we want to divide equally  (like in #menu), we want to give each a width of 25%. If we have to
+    account for 3 whitespaces in between we can't do this.
+
+    A more thorough explanation can be found here:
+      http://stackoverflow.com/questions/19038799/why-is-there-an-unexplainable-gap-between-these-inline-block-div-elements/19038859#19038859
+      
+  -->
 </head>
 <body>
   <div class="wrapper">
     <header>
       <div class="title">
-	      <div class="beer beer-6"></div>
-	      <div class="beer beer-5"></div>
-	      <div class="beer beer-4"></div>
-	      <div class="beer beer-3"></div>
-	      <div class="beer beer-2"></div>
-	      <div class="beer beer-1"></div>
-	      <span>Zuipvakanties.nl</span>
-	      <div class="beer beer-1"></div>
-	      <div class="beer beer-2"></div>
-	      <div class="beer beer-3"></div>
-	      <div class="beer beer-4"></div>
-	      <div class="beer beer-5"></div>
-	      <div class="beer beer-6"></div>
+        <div class="beer beer-6"></div>
+        <div class="beer beer-5"></div>
+        <div class="beer beer-4"></div>
+        <div class="beer beer-3"></div>
+        <div class="beer beer-2"></div>
+        <div class="beer beer-1"></div>
+        <span>Zuipvakanties.nl</span>
+        <div class="beer beer-1"></div>
+        <div class="beer beer-2"></div>
+        <div class="beer beer-3"></div>
+        <div class="beer beer-4"></div>
+        <div class="beer beer-5"></div>
+        <div class="beer beer-6"></div>
         <span class="extra">De enige reisorganisator die je gegarandeerd een kater bezorgt!</span>
-	      </div><div id="menu-button"></div>
-      </header><nav>
+	  </div>
+      <div id="menu-button"></div>
+    </header>
+    <nav>
       <ul id="menu">
-        <li><a href="index.html" class="active">Home</a></li
-        ><li><a href="#">Aanbiedingen</a></li
-        ><li><a href="#">Registreren</a></li
-        ><li><a href="#" id="login-link">Inloggen</a></li
-        ><li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a>
+        </li><li><a href="register.html">Registreren</a>
+        </li><li><a href="#" id="login-link">Inloggen</a>
+        </li><li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
       <div class="col-1">
         <article>
-          <img src="media/foamparty.jpg" alt="Women at a foam party" title="By Scott Sandars (Flickr: [1]) [CC-BY-SA-2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons - 1. http://commons.wikimedia.org/wiki/File/Women_at_a_foam_party.jpg">
+          <a href="offers.html?id=1">
+            <img src="media/foamparty.jpg" alt="Women at a foam party" title="By Scott Sandars (Flickr: [1]) [CC-BY-SA-2.0 (http://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons - 1. http://commons.wikimedia.org/wiki/File:Women_at_a_foam_party.jpg">
+          </a>
           <h1>Spectaculaire Foam Party's!</h1>
           <p>Op onze foam party's in het pittoreske Neubergen is het altijd &#34;Jetzt geht's los!&#34; Boek nu en maak tijdelijk kans op een meet and greet met Winston Gerschtanowitz. Wees er snel bij, deze dames wachten op je!</p>
-        </article><article>
-        <img src="media/mardigras.jpg" alt="Mardi Gras in New Orleans" title='"MGD08ToastPurpleGreenGoldDrums" by Flickr photographer Toast to Life - Flickr photo. Licensed under Creative Commons Attribution-Share Alike 2.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:MGD08ToastPurpleGreenGoldDrums.jpg'>
-        <h1>Carnaval Extreme Holiday</h1>
-        <p>Hou je van verkleedpartijtjes die de grenzen opzoeken? Dan zit je goed bij onze Carnaval Extreme Holiday pakketten! Je moet je samen met je vrienden melden bij Schiphol, waar je vervolgens geblinddoekt naar je verrassingsbestemming wordt vervoerd. Aldaar wordt er van je verwacht dat je gezellig meedoet met de plaatselijke feestvreugde, uiteraard onder het genot van whatever ze daar drinken. Als dat geen kater om nooit te vergeten oplevert!</p>
         </article>
-      </div><div class="col-2">
         <article>
-          <img title="Drunk College Kids by Gregg O&#x27;Connell, on Flickr [CC BY 2.0 (https://www.flickr.com/photos/greggoconnell/231385188)]" src="media/drunk_kids.jpg" alt="Drunk College Kids">
+          <a href="offers.html?id=2">
+            <img src="media/mardigras.jpg" alt="Mardi Gras in New Orleans" title='"MGD08ToastPurpleGreenGoldDrums" by Flickr photographer Toast to Life - Flickr photo. Licensed under Creative Commons Attribution-Share Alike 2.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:MGD08ToastPurpleGreenGoldDrums.jpg'>
+          </a>
+          <h1>Carnaval Extreme Holiday</h1>
+          <p>Hou je van verkleedpartijtjes die de grenzen opzoeken? Dan zit je goed bij onze Carnaval Extreme Holiday pakketten! Je moet je samen met je vrienden melden bij Schiphol, waar je vervolgens geblinddoekt naar je verrassingsbestemming wordt vervoerd. Aldaar wordt er van je verwacht dat je gezellig meedoet met de plaatselijke feestvreugde, uiteraard onder het genot van whatever ze daar drinken. Als dat geen kater om nooit te vergeten oplevert!</p>
+        </article>
+      </div>
+      <div class="col-2">
+        <article>
+          <a href="offers.html?id=3">
+            <img title="Drunk College Kids by Gregg O&#x27;Connell, on Flickr [CC BY 2.0 (https://www.flickr.com/photos/greggoconnell/231385188)]" src="media/drunk_kids.jpg" alt="Drunk College Kids">
+          </a>
           <h1>Crash Crazy College Party's</h1>
             <p>Dit jaar voor het eerst! Crash besloten college feestjes in de VS! Jij hoeft je alleen aan te melden, wij zorgen voor de rest: een fake collegekaart en een snelcursus Yankee English for Freshmen. Boek nu en geniet van onze unieke &#34;Geen kater, geld terug&#34; garantie! </p>
-        </article><article>
-          <img src="media/voetreis.jpg" alt="Pelgrims onderweg ten oosten van Castrojeriz" title='"Camino near Castrojeriz" by MartinD - Eigen werk. Licensed under Creative Commons Attribution-Share Alike 3.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Camino_near_Castrojeriz.jpg'>
+        </article>
+        <article>
+          <a href="offers.html?id=4">
+            <img src="media/voetreis.jpg" alt="Pelgrims onderweg ten oosten van Castrojeriz" title='"Camino near Castrojeriz" by MartinD - Eigen werk. Licensed under Creative Commons Attribution-Share Alike 3.0 via Wikimedia Commons - http://commons.wikimedia.org/wiki/File:Camino_near_Castrojeriz.jpg'>
+          </a>
           <h1>Geheel verzorgde voetreis</h1>
           <p>Geniet extra van de vakantie met onze geheel verzorgde voetreizen naar Rome. Als je je geregistreerd hebt hoef je alleen nog schoenen, bagage en alle andere reisbenodigdheden mee te nemen. Je kunt in elke plaats in Nederland beginnen. Toch niet zo'n zin in al dat geloop? Dan kan je altijd nog het vliegtuig nemen. Hiervoor verwijzen wij je door naar diverse vliegtuigmaatschappijen. Als je je voor deze unieke ervaring inschrijft krijg je binnen twee weken een gids toegezonden met een overzicht van alle kroegen op de weg van Amsterdam naar Rome.</p>
         </article>

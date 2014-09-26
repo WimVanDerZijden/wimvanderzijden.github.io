@@ -38,10 +38,21 @@ h1 {
   color: #FF9900;
 }
 
+h2 {
+  font: 200 15px/30px 'Arvo', serif;
+  text-align: left;
+  color: #FF9900;
+}
+
 p {
   font: 14px/20px 'Arvo', serif;
   text-align: justify;
   padding: 1%;
+}
+
+button {
+  background-color: #1F83FF;
+  color: #EDE5D9;
 }
 
 .clear {
@@ -214,22 +225,22 @@ article img {
 }
 
 /* Contact Form */
-#contact input,
-#contact textarea 
+#form-fill-in input,
+#form-fill-in textarea 
 {
   font-family: 'Arvo', serif;
   width: 98%;
   margin: 1%;
 }
 
-#contact .extra,
-#contact label,
+#form-fill-in .extra,
+#form-fill-in label,
 #form-sent,
 .contact-info img{
   display: none 
 }
 
-#contact .extra,
+#form-fill-in .extra,
 #form-sent .extra,
 .contact-info .extra {
   font: 12px 'Arvo', serif;
@@ -238,16 +249,23 @@ article img {
   margin: 2%;
 }
 
-#contact #submit {
+#form-fill-in #submit {
   background-color: #1F83FF;
   color: #EDE5D9;
+}
+
+#form-fill-in #conditions {
+  width: auto;
+}
+
+#form-fill-in span {
+  font: 14px/20px 'Arvo', serif;
+  color: #1F83FF; 
 }
 
 .contact-info li {
   font: 14px/20px 'Arvo', serif;
 }
-
-
 
 /* Footer */
 

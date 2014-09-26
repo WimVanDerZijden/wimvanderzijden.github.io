@@ -59,28 +59,36 @@
     <nav>
       <ul id="menu">
         <li><a href="index.html">Home</a>
-        </li><li><a href="register.html">Registreren</a>
+        </li><li><a href="register.html" class="active">Registreren</a>
         </li><li><a href="#" id="login-link">Inloggen</a>
-        </li><li><a href="contact.html" class="active">Contact</a></li>
+        </li><li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <main>
       <article id="form-fill-in">
-        <h1>Stuur ons een vraag of opmerking!</h1>
-        <span class="extra">Vragen of opmerkingen over prijzen, annuleringen, overboekingen, ongelukken, klachten, alcoholvergiftiging, alcohol en drugsmisbruik van reisleiders en wat voor vragen en opmerkingen dan ook worden niet beantwoord.</span>
-        <form action="javascript:submitContactForm()">
-          <label for="name">Naam
-          </label><input type="text" placeholder="Je naam" name="name" id="name" required>
+        <h1>Registreer</h1>
+        <span class="extra">Zuipvakanties.nl zal jouw persoonlijke gegevens uitsluitend aanwenden voor eigen gebruik en gebruik van derden. Wij onttrekken ons van alle verplichtingen om zorgvuldig met jouw gegevens om te gaan.</span>
+        <form action="javascript:submitForm()">
           <label for="email">E-mail
           </label><input type="email" placeholder="jouw@email.adres" name="email" id="email" required>
-          <label for="message">Bericht
-          </label><textarea rows="10" placeholder="Je vraag of opmerking" name="message" id="message" required></textarea>
-          <input type="submit" value="Verstuur" id="submit">
+          <label for="name">Naam
+          </label><input type="text" placeholder="Hoe heet je?" name="name" id="name" required>
+          <label for="address">Straat en huisnummer
+          </label><input type="text" placeholder="Wat zijn je straat en huisnummer?" name="address" id="address" required>
+          <label for="postal">Postcode
+          </label><input type="text" placeholder="Wat is je postcode?" name="postal" id="postal" title="Voer hier een geldige postcode in" pattern="^[1-9][0-9]{3}\s*[a-zA-Z]{2}$" required>
+          <label for="address">Stad
+          </label><input type="text" placeholder="In welke stad woon je?" name="address" id="address" required>
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="conditions" id="conditions" required>
+            <span>Ik ga akkoord met de algemene voorwaarden</span>
+          </div>
+          <input type="submit" value="Registreer" id="submit">
         </form>
       </article>
       <article id="form-sent">
-        <h1>We hebben je vraag of opmerking ontvangen!</h1>
-        <span class="extra">Wegens het grote aantal vragen dat wij dagelijks binnenkregen (zo'n 2 per week) kunnen we niet overal op antwoorden. Maar reken er maar op dat we alles lezen! Mochten we tegen alle verwachtingen in toch reageren op deze vraag, dan vragen we je vriendelijk dit als een incident te beschouwen. Mocht je verder nog vragen of opmerkingen hebben, schroom dan niet om <a href="contact.html">nogmaals</a> van dit formulier gebruik te maken!</span>
+        <h1>Bedankt voor je registratie!</h1>
+        <span class="extra">Binnen enkele weken ontvang je een bevestiging van je registratie, compleet met een uniek, computergegenereerd wachtwoord van 32 tekens dat je niet kan veranderen! Vergeet niet om onmiddellijk in te loggen op onze site en gebruik te maken van de vele voordeeltjes en aanbiedingen!</span>
       </article>
       <aside class="contact-info">
         <h1>Contact Informatie</h1>
@@ -93,26 +101,26 @@
         <p class="extra">Disclaimer: zuipvakanties.nl onthoudt zich van alle aansprakelijkheid voor wat dan ook.</p>
       </aside>
     </main>
-  <div class="clear"></div>
-  <div id="dark"></div>
-  <div id="login">
-    <h1>Log in</h1>
-    <form action="index.html">
-      <input type="email" placeholder="E-mail" name="email" required>
-      <input type="password" placeholder="Wachtwoord" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" title="Password moet minimaal 8 tekens zijn en minstens 1 kleine letter, 1 hoofdletter en 1 cijfer bevatten." required>
-      <!-- Password regex modified from regex by Steven Smith via http://regexlib.com/REDetails.aspx?regexp_id=31 -->
-      <input type="submit" value="Login" class="submit">
-    </form>
-  </div>
-  <footer>
-    <span class="copyright">
-    &copy;2014 Van der Zijden Enterprises. 
-    </span>
-    <span class="extra"></span>
-    <span class="attributions">
-      Attribution: <a title="By http://www.fatcow.com/free-icons/ FatCow Web Hosting] (http://www.fatcow.com/free-icons/) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AFarm-Fresh_beer.png">Farm-Fresh beer</a>
-    </span>
-  </footer>
+    <div class="clear"></div>
+    <div id="dark"></div>
+    <div id="login">
+      <h1>Log in</h1>
+      <form action="index.html">
+        <input type="email" placeholder="E-mail" name="email" required>
+        <input type="password" placeholder="Wachtwoord" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$" title="Password moet minimaal 8 tekens zijn en minstens 1 kleine letter, 1 hoofdletter en 1 cijfer bevatten." required>
+        <!-- Password regex modified from regex by Steven Smith via http://regexlib.com/REDetails.aspx?regexp_id=31 -->
+        <input type="submit" value="Login" class="submit">
+      </form>
+    </div>
+    <footer>
+      <span class="copyright">
+      &copy;2014 Van der Zijden Enterprises. 
+      </span>
+      <span class="extra"></span>
+      <span class="attributions">
+        Attribution: <a title="By http://www.fatcow.com/free-icons/ FatCow Web Hosting] (http://www.fatcow.com/free-icons/) [CC-BY-SA-3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AFarm-Fresh_beer.png">Farm-Fresh beer</a>
+      </span>
+    </footer>
   </div>
   <script src="js/main.js"></script>
 </body>

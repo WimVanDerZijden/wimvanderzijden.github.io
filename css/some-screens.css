@@ -30,10 +30,10 @@
     width: 100%;
     float: none;
   }
-
+  
   nav li {
     display: inline-block;
-    width: 20%;
+    width: 25%;
   }
 
   #menu-button {
@@ -52,7 +52,7 @@
     font: 36px/72px 'Shadows Into Light', cursive;
   }
   
-  #contact label {
+  #form-fill-in label {
     display: inline-block;
     font: 14px/20px 'Arvo', serif;
     color: #FF9900;
@@ -61,15 +61,19 @@
     margin: 1%;
   }
   
-  #contact input, #contact textarea {
+  #form-fill-in input,
+  #form-fill-in textarea,
+  #form-fill-in .checkbox-wrapper {
     width: 73%;
   }
   
-  #contact textarea, #contact #submit {
+  #form-fill-in textarea,
+  #form-fill-in #submit,
+  #form-fill-in .checkbox-wrapper {
     float: right;
   }
   
-  #contact .extra,
+  #form-fill-in .extra,
   .contact-info .extra {
     display: block;
   }
@@ -141,7 +145,8 @@
     color: #ede5d9;
   }
 
-  .col-1, .col-2 {
+  .col-1,
+  .col-2 {
     display: inline-block;
     width: 50%;
   }
@@ -154,7 +159,7 @@
     float: right;
   }
   
-  #contact,
+  #form-fill-in,
   #form-sent {
     width: 73%;
     float:left;
@@ -170,6 +175,15 @@
     width: 100%;
     height: auto;
     padding: 10%;
+  }
+  
+  .offer {
+    width: 73%;
+  }
+  
+  .price-info {
+    width: 23%;
+    float: right;
   }
   
 }

@@ -47,8 +47,8 @@ for (n = 0; n < articles.length; n += 1) {
   }
 }
 
-/* Pretend we've just submitted the form with AJAX */
+/* Pretend we've just submitted the contact form with AJAX */
 var submitForm = function () {
-  document.getElementById("contact").style.display = 'none';
+  document.getElementById("form-fill-in").style.display = 'none';
   document.getElementById("form-sent").style.display = 'block';
 };

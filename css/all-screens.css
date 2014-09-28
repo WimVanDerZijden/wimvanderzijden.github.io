@@ -31,13 +31,13 @@ ul {
    list-style: none inside;
 }
 
-h1 {
+h2 {
   font: 600 15px/30px 'Arvo', serif;
   text-align: center;
   color: #FF9900;
 }
 
-h2 {
+h3 {
   font: 200 15px/30px 'Arvo', serif;
   text-align: left;
   color: #FF9900;

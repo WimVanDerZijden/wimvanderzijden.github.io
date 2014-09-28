@@ -7,7 +7,22 @@ if (document.getElementById('ie8') != null) {
 	document.getElementById("wrapper").style.display = 'none';
 }
 else {
-	
+	/*
+	 HTML5 Form-validatie werkt wel in Opera, maar de message wordt niet weergegeven,
+	 waardoor deze functionaliteit erg verwarrend werkt voor de gebruiker.
+	 Onderstaande link suggereert dat dit opgelost wordt door een "gewoon lettertype"
+	 te gebruiken, maar dit blijkt niet te werken, dus deze code is weer uitgecomment.
+	 
+	 http://stackoverflow.com/a/16254439
+	 
+	if (navigator.userAgent.indexOf("Opera")) {
+		var inputs = document.getElementsByTagName("input");
+		var n;
+		for (n = 0; n < inputs.length; n += 1) {
+			inputs[n].style.fontFamily = 'Arial';
+		}
+	}
+	*/
 	// Add class 'show-mobile' to display the menu when in mobile mode, when
 	// menu-button was clicked.
 	var toggleMobileMenu = function () {

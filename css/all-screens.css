@@ -152,10 +152,10 @@ nav li {
 }
 
 nav a {
-  transition-property: color, font-weight;
+	transition-property: color, font-weight;
   transition-duration: .5s;
   transition-timing-function: linear;
-  color: #048058;
+	color: #048058;
 }
 
 nav a.active, nav a:hover {

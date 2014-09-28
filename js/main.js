@@ -1,8 +1,7 @@
 "use strict";
 
-// IE 8 crashes on some of the javascript.
-// Because we decided not to support IE 8, we simply disable it all.
-// We also hide all site content.
+// We don't support <= IE 8.
+// Hide the entire site and display a sarcastic message
 if (document.getElementById('ie8') !== null) {
   document.getElementById("wrapper").style.display = 'none';
 } else {
@@ -38,7 +37,7 @@ if (document.getElementById('ie8') !== null) {
 
   document.getElementById('login-link').addEventListener('click', showLoginDialog, false);
 
-  // Hide the login dialog when cliking on the area around it (#dark)
+  // Hide the login dialog when clicking on the area around it (#dark)
   var hideLoginDialog = function () {
     document.getElementById('login').style.display = 'none';
     document.getElementById('dark').style.display = 'none';
@@ -62,7 +61,7 @@ if (document.getElementById('ie8') !== null) {
 
   var articles = document.getElementsByTagName('article');
   // The higher the dullness, the smaller the rotations.
-  // The maximum rotation angle is PI over dullness over 2 radians.
+  // The maximum rotation angle is PI over dullness over 2 radian.
   var DULLNESS = 12;
   var n, i;
   for (n = 0; n < articles.length; n += 1) {

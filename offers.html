@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 9 ]> <html id="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]> <html> <![endif]-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -36,7 +37,12 @@
   -->
 </head>
 <body>
-  <div class="wrapper">
+  <!--[if (lt IE 9)]>
+    <div class="ie8-warning">
+      <p>Knock knock... Who's there? IE 8...</p>
+    </div>
+  <![endif]-->
+  <div id="wrapper">
     <header>
       <div class="title">
         <div class="beer beer-6"></div>
@@ -102,6 +108,7 @@
     </span>
   </footer>
   </div>
+  <!--[if IE 9 ]> <script src="js/ie9.js"></script> <![endif]-->
   <script src="js/main.js"></script>
 </body>
 </html>
